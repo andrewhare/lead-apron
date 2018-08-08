@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Lead Apron",
+    "version": "1.0",
+    "description": "Hide X-Ray content on Amazon Video",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.amazon.com/*"
+            ],
+            "js": [
+                "jquery-3.3.1.slim.min.js",
+                "content.js"
+            ]
+        }
+    ]
+}
